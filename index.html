@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>GreenCloud</title>
+    <style>
+      .footer-hover{
+			color: rgba(156, 163, 175, 1);
+			text-decoration:none;
+			}
+		.footer-hover:hover{
+			color: white;
+			}
+    </style>
+  </head>
+  <body class="font-inter">
+    <!--navbar section-->
+    <div class="fixed bg-white z-10">
+    <div class="flex items-center w-screen justify-between p-2 md:p-4 shadow gap-4">
+		<div class="brand-logo w-48">
+      <span class="fas fa-cloud inline text-4xl text-green-400"></span><div class="text-xl inline font-bold"><span class="text-green-400 ml-2">GREEN</span>CLOUD</div>
+		</div>
+		<div class="ml-8 hidden md:contents">
+			<ul class="flex gap-8">
+				<li><a class="hover:text-green-400" href="#">Products</a></li>
+				<li><a class="hover:text-green-400" href="#">Solution</a></li>
+				<li><a class="hover:text-green-400" href="#">Marketplace</a></li>
+				<li><a class="hover:text-green-400" href="#">Community</a></li>
+				<li><a class="hover:text-green-400" href="#">Pricing</a></li>
+			</ul>
+		</div>
+		<div class="hidden md:contents">
+			<div class="flex gap-6">
+				<a href="#"><p class="border border-green-400 text-green-400 font-bold rounded-full py-2 px-6 hover:bg-green-100">Sign In</p></a>
+				<a href="#"><p class="bg-green-400 text-white font-bold rounded-full py-2 px-6">Sign Up</p></a>
+			</div>
+		</div>
+    <button id="navbar-button" onClick="letNavbar()" class="md:hidden mx-4 text-xl hover:text-green-400"><span class="fas fa-bars"></span></button>
+    </div>
+    <div id="navbar-collapsible" class="collapsible-navbar relative bg-white border-b-2 border-green-400 hidden">
+        <ul class="leading-loose">
+          <li><a class="hover:text-green-400 p-4" href="#">Products</a></li>
+          <li><a class="hover:text-green-400 p-4" href="#">Solution</a></li>
+          <li><a class="hover:text-green-400 p-4" href="#">Marketplace</a></li>
+          <li><a class="hover:text-green-400 p-4" href="#">Community</a></li>
+          <li><a class="hover:text-green-400 p-4" href="#">Pricing</a></li>
+          <li><a href="#"><p class="border border-green-400 text-green-400 font-bold rounded-full m-4 w-32 py-2 px-6 hover:bg-green-100">Sign In</p></a></li>
+          <li><a href="#"><p class="border border-green-400 text-green-400 font-bold rounded-full m-4 w-32 py-2 px-6 hover:bg-green-100">Sign Up</p></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!--Hero Section-->
+    <div class="pb-20">
+		<div class="grid grid-cols-1 md:grid-cols-2 items-center">
+			<div class="left-section px-4 md:px-20 pb-16 pt-28">
+				<h1 class="text-5xl font-bold">Simplify Your Cloud</h1>
+				<h3 class="text-xl pt-8">Build alongside half a million developers and businesses like you.</h3>
+				<a href="#"><div class="font-bold bg-green-400 text-white hover:bg-green-500 py-2 px-6 rounded-full w-48 text-center mt-8">Deploy in secods</div></a>
+			</div>
+			<div class="right-section">
+				<img class="w-full rounded-border-left" src="https://picsum.photos/seed/349/960" alt="">
+			</div>
+		</div>
+    </div>
+    
+    <!--Growing Business Section-->
+    <div class="bg-green-100 py-20">
+		<div class="top-section text-center max-w-screen-md p-4 mx-auto">
+			<h1 class="text-5xl font-bold text-green-800">Tailored for growing businesses</h1>
+			<h3 class="text-xl text-green-800 font-light pt-8">Develop, manage, and scale your applications on DigitalOcean’s complete cloud platform.Develop, manage, and scale your applications on DigitalOcean’s complete cloud platform.</h3>
+		</div>
+		<div class="card-section pt-16 max-w-screen-lg p-4 mx-auto">
+			<div class="grid grid-cols-1 justify-center md:grid-cols-3 gap-8">
+				<div class="w-full rounded shadow bg-white border p-6">
+          <div class="w-12 h-12 rounded-full bg-green-500"><span class="fas fa-microchip text-white transform translate-x-4 translate-y-2"></span></div>
+					<h5 class="font-bold mt-4">Compute</h5>
+					<p class="mt-4">Tincidunt augue interdum velit euismod in. Orci dapibus ultrices iaculis</p>
+				</div>
+				<div class="w-full rounded shadow bg-white border p-6">
+					<div class="w-12 h-12 rounded-full bg-green-500"><span class="fas fa-database text-white transform translate-x-4 translate-y-2"></div>
+					<h5 class="font-bold mt-4">Database</h5>
+					<p class="mt-4">Mauris sit amet massa vitae tortor condimentum lacinia quis vel</p>
+				</div>
+				<div class="w-full rounded shadow bg-white border p-6">
+					<div class="w-12 h-12 rounded-full bg-green-500"><span class="fas fa-hdd text-white transform translate-x-4 translate-y-2"></div>
+					<h5 class="font-bold mt-4">Storage</h5>
+					<p class="mt-4">Penatibus et magnis dis parturient montes nascetur ridiculus mus.</p>
+				</div>
+				<div class="w-full rounded shadow bg-white border p-6">
+					<div class="w-12 h-12 rounded-full bg-green-500"><span class="fas fa-network-wired text-white transform translate-x-3 translate-y-2"></div>
+					<h5 class="font-bold mt-4">Networking</h5>
+					<p class="mt-4">Venenatis lectus magna fringilla urna porttitor rhoncus dolor</p>
+				</div>
+				<div class="w-full rounded shadow bg-white border p-6">
+					<div class="w-12 h-12 rounded-full bg-green-500"><span class="fas fa-shopping-cart text-white transform translate-x-3 translate-y-2"></div>
+					<h5 class="font-bold mt-4">Marketplace</h5>
+					<p class="mt-4">Tincidunt augue interdum velit euismod in. Orci dapibus ultrices iaculis</p>
+				</div>
+				<div class="w-full rounded shadow bg-white border p-6">
+					<div class="font-bold text-green-400 mt-4">See More</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <!--Quotes Section-->
+    <div class="bg-green-700 text-white px-4 py-20">
+		<div class="max-w-screen-md text-center mx-auto">
+			<div class="brand-logo w-48">
+				<img class="mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Rocky_Linux_wordmark.svg">
+			</div>
+			<h1 class="pt-8 text-2xl font-light"><span class="text-5xl font-bold">"</span>Tincidunt augue interdum velit euismod in. Orci dapibus ultrices in iaculis nunc sed augue. Montes nascetur ridiculus mus mauris vitae ultricies. Venenatis lectus magna fringilla urna porttitor rhoncus dolor."</h1>
+			<h5 class="pt-8">Interdum Velit</h5>
+			<h6 class="text-sm">Ultrices in iaculis nunc</h6>
+		</div>
+    </div>
+    
+    <!--Complex Issue Section-->
+    <div class="bg-white py-20">
+		<div class="top-section text-center max-w-screen-lg p-4 mx-auto">
+			<h1 class="text-5xl font-bold">Simple solutions for complex issues</h1>
+			<h3 class="text-xl font-light pt-8">Running a business is hard. Your cloud doesn’t have to be.</h3>
+		</div>
+		<div class="card-section text-center md:text-left pt-12 container md:px-20 p-4 mx-auto">
+			<div class="grid grid-cols-1 justify-center md:grid-cols-3 gap-4">
+				<div class="w-full bg-white p-6">
+					<div class="w-24 h-24 mx-auto md:mx-0 rounded-full bg-green-500"><span class="fas fa-microchip text-white text-3xl transform translate-y-8 md:translate-x-8"></span></div>
+					<h5 class="font-bold mt-4">Web & mobile apps</h5>
+					<p class="mt-4">Vulputate eu scelerisque felis imperdiet proin fermentum leo. Pellentesque habitant morbi tristique senectus et netus</p>
+					<a href="#"><div class="text-green-500 mt-4">Orci dapibus ultrices iaculis ></div></a>
+				</div>
+				<div class="w-full bg-white p-6">
+					<div class="w-24 h-24 mx-auto md:mx-0 rounded-full bg-green-500"><span class="fas fa-globe text-white text-3xl transform translate-y-8 md:translate-x-8"></span></div>
+					<h5 class="font-bold mt-4">Website hosting</h5>
+					<p class="mt-4">Et malesuada fames ac turpis egestas sed tempus. Nulla facilisi morbi tempus iaculis urna id. Fermentum dui faucibus in ornare quam viverra orci</p>
+					<a href="#"><div class="text-green-500 mt-4">Orci dapibus ultrices iaculis ></div></a>
+				</div>
+				<div class="w-full bg-white p-6">
+					<div class="w-24 h-24 mx-auto md:mx-0 rounded-full bg-green-500"><span class="fas fa-play text-white text-3xl transform translate-y-8 md:translate-x-8"></span></div>
+					<h5 class="font-bold mt-4">Streaming</h5>
+					<p class="mt-4">Tortor condimentum lacinia quis vel eros donec ac. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Gravida arcu ac tortor dignissim convallis aenean.</p>
+					<a href="#"><div class="text-green-500 mt-4">Orci dapibus ultrices iaculis ></div></a>
+				</div>
+				<div class="w-full bg-white p-6">
+					<div class="w-24 h-24 mx-auto md:mx-0 rounded-full bg-green-500"><span class="fas fa-gamepad text-white text-3xl transform translate-y-8 md:translate-x-8"></span></div>
+					<h5 class="font-bold mt-4">Gaming</h5>
+					<p class="mt-4">Pharetra et ultrices neque ornare aenean euismod elementum nisi. Cursus eget nunc scelerisque viverra mauris in. Ante in nibh mauris cursus mattis molestie a iaculis at.</p>
+					<a href="#"><div class="text-green-500 mt-4">Orci dapibus ultrices iaculis ></div></a>
+				</div>
+				<div class="w-full bg-white p-6">
+					<div class="w-24 h-24 mx-auto md:mx-0 rounded-full bg-green-500"><span class="fas fa-database text-white text-3xl transform translate-y-8 md:translate-x-8"></span></div>
+					<h5 class="font-bold mt-4">Big data</h5>
+					<p class="mt-4">Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Risus pretium quam vulputate dignissim suspendisse in est. Lectus quam id leo in vitae turpis massa.</p>
+					<a href="#"><div class="text-green-500 mt-4">Orci dapibus ultrices iaculis ></div></a>
+				</div>
+				<div class="w-full bg-white p-6">
+					<div class="w-24 h-24 mx-auto md:mx-0 rounded-full bg-green-500"><span class="fas fa-tools text-white text-3xl transform translate-y-8 md:translate-x-8"></span></div>
+					<h5 class="font-bold mt-4">Managed services</h5>
+					<p class="mt-4">Et ligula ullamcorper malesuada proin. Lobortis mattis aliquam faucibus purus in massa. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor.</div>
+					<a href="#"><div class="text-green-500 mt-4">Orci dapibus ultrices iaculis ></div></a>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <!--Hot Mission Section-->
+    <div class="bg-white pb-20">
+		<div class="top-section text-center max-w-screen-lg p-4 mx-auto">
+			<h1 class="text-5xl font-bold">Host mission-critical solutions</h1>
+			<h3 class="text-xl font-light pt-8">Everything you need to run fast and scale faster.</h3>
+		</div>
+		<div class="card-section pt-12 container p-4 md:px-20 mx-auto">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<div class="">
+					<div class="flex items-center bg-white p-6">
+						<div class="w-full">
+							<div class="w-24 h-24 m-2 rounded-full bg-green-500"><span class="fas fa-calculator text-white text-5xl transform translate-y-6 translate-x-6"></span></div>
+						</div>
+						<div class="">
+							<h5 class="font-bold mt-4">Control your costs</h5>
+							<p class="mt-4">Vulputate eu scelerisque felis imperdiet proin fermentum leo. Pellentesque habitant morbi tristique senectus et netus. Pellentesque habitant morbi tristique senectus et netus</p>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="flex items-center bg-white p-6">
+						<div class="w-full">
+							<div class="w-24 h-24 m-2 rounded-full bg-green-500"><span class="fas fa-shield-alt text-white text-5xl transform translate-y-6 translate-x-6"></span></div>
+						</div>
+						<div>
+							<h5 class="font-bold mt-4">Protect your information</h5>
+							<p class="mt-4">Et malesuada fames ac turpis egestas sed tempus. Nulla facilisi morbi tempus iaculis urna id. Fermentum dui faucibus in ornare quam viverra orci</p>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="flex items-center bg-white p-6">
+						<div class="w-full">
+							<div class="w-24 h-24 m-2 rounded-full bg-green-500"><span class="fas fa-hand-pointer text-white text-5xl transform translate-y-6 translate-x-6"></span></div>
+						</div>
+						<div>
+							<h5 class="font-bold mt-4">Automate & orchestrate with a click</h5>
+							<p class="mt-4">Tortor condimentum lacinia quis vel eros donec ac. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Gravida arcu ac tortor dignissim convallis aenean.</p>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="flex items-center bg-white p-6">
+						<div class="w-full">
+							<div class="w-24 h-24 m-2 rounded-full bg-green-500"><span class="fas fa-globe-americas text-white text-5xl transform translate-y-6 translate-x-6"></span></div>
+						</div>
+						<div>
+							<h5 class="font-bold mt-4">Get global availability</h5>
+							<p class="mt-4">Pharetra et ultrices neque ornare aenean euismod elementum nisi. Cursus eget nunc scelerisque viverra mauris in. Ante in nibh mauris cursus mattis molestie a iaculis at.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <!--Get Started Secton-->
+    <div class="py-12 px-4 bg-green-700">
+		<div class="container mx-auto items-center grid grid-cols-1 md:grid-cols-2 md:px-20 gap-4">
+			<div class="text-left-section">
+				<h1 class="text-4xl font-bold text-white">Faucibus nisl tincidunt eget?</h1>
+				<h3 class="text-xl text-white pt-6">Et ligula ullamcorper malesuada proin. Lobortis mattis aliquam faucibus purus in massa.</h3>
+			</div>
+			<div class="text-green-500 font-bold text-xl md:ml-auto">
+				<a href="#"><div class="bg-white hover:bg-green-100 rounded-full py-2 px-8 w-48">Get Started</div></a>
+			</div>
+		</div>
+    </div>
+    
+    <!--Footer Section-->
+    <div class="bg-green-900 py-20">
+		<div class="container mx-auto px-4 md:px-20 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm">
+			<ul>
+				<li class="font-bold pb-4 text-white">Company</li>
+				<li><a href="#" class="footer-hover">Lorem</a></li>
+				<li><a href="#" class="footer-hover">Ipsum</a></li>
+				<li><a href="#" class="footer-hover">Dolor</a></li>
+				<li><a href="#" class="footer-hover">Sit</a></li>
+				<li><a href="#" class="footer-hover">Amet</a></li>
+			</ul>
+			<ul>
+				<li class="font-bold pb-4 text-white">Products</li>
+				<li><a href="#" class="footer-hover">Lorem</a></li>
+				<li><a href="#" class="footer-hover">Ipsum</a></li>
+				<li><a href="#" class="footer-hover">Dolor</a></li>
+				<li><a href="#" class="footer-hover">Sit</a></li>
+				<li><a href="#" class="footer-hover">Amet</a></li>
+				<li><a href="#" class="footer-hover">Dolor</a></li>
+				<li><a href="#" class="footer-hover">Sit</a></li>
+				<li><a href="#" class="footer-hover">Amet</a></li>
+			</ul>
+			<ul>
+				<li class="font-bold pb-4 text-white">Community</li>
+				<li><a href="#" class="footer-hover">Lorem</a></li>
+				<li><a href="#" class="footer-hover">Ipsum</a></li>
+				<li><a href="#" class="footer-hover">Dolor</a></li>
+				<li><a href="#" class="footer-hover">Sit</a></li>
+				<li><a href="#" class="footer-hover">Amet</a></li>
+			</ul>
+			<ul>
+				<li class="font-bold pb-4 text-white">Solutions</li>
+				<li><a href="#" class="footer-hover">Lorem</a></li>
+				<li><a href="#" class="footer-hover">Ipsum</a></li>
+				<li><a href="#" class="footer-hover">Dolor</a></li>
+				<li><a href="#" class="footer-hover">Sit</a></li>
+				<li><a href="#" class="footer-hover">Amet</a></li>
+				<li><a href="#" class="footer-hover">Sit</a></li>
+				<li><a href="#" class="footer-hover">Amet</a></li>
+			</ul>
+			<ul>
+				<li class="font-bold pb-4 text-white">Contact</li>
+				<li><a href="#" class="footer-hover">Support</a></li>
+				<li><a href="#" class="footer-hover">Sales</a></li>
+				<li><a href="#" class="footer-hover">Report</a></li>
+				<li><a href="#" class="footer-hover">System Status</a></li>
+			</ul>
+		</div>
+    <div class="container mx-auto flex items-center justify-between pt-8 px-4 md:px-20 gap-4">
+      <a href="#">
+        <div class="brand-logo w-48">
+          <span class="fas fa-cloud inline text-4xl text-green-400"></span><div class="text-xl inline font-bold"><span class="text-green-400 ml-2">GREEN</span>CLOUD</div>
+        </div>
+      </a>
+      <div class="text-white">Copyright 2021</div>
+      <div>
+          <ul class="text-white text-3xl">
+            <li class="inline-block"><a href="#" class="hover:text-green-400"><i class="fab fa-facebook"></i></a></li>
+            <li class="inline-block"><a href="#" class="hover:text-green-400"><i class="fab fa-instagram"></i></a></li>
+            <li class="inline-block"><a href="#" class="hover:text-green-400"><i class="fab fa-twitter"></i></a></li>
+            <li class="inline-block"><a href="#" class="hover:text-green-400"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+      </div>
+		</div>
+		
+    
+  </body>
